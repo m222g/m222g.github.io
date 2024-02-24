@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Contact Us</title>
+		<link rel="stylesheet" type="text/css" href="ri.css">
+		<link rel="icon" href="favicon.png">
+	</head>
+	<body>
+		<header>
+			<h1>Contact Us</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="providence.html">Providence</a></li>
+				<li><a href="newport.html">Newport</a></li>
+				<li><a href="westerly.html">Westerly</a><li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<img src="contactuspage.png" alt="Rhode Island Beach">
+		<section>
+			<h2>Fill out Contact Form Here!</h2>
+			<hr>
+			<div class="firstform"
+			<form>
+				<label for="firstname">First Name: </label>
+				<input type="text" id="firstname" name="firstname" placeholder="Jane">
+				<br>
+				<br>
+				<label for="lastname">Last Name: </label>
+				<input type="text" id="lastname" name="lastname" placeholder="Doe">
+				<br>
+				<br>
+				<label for="emailone">Email: </label>
+				<input type="text" id="emailone" name="emailone" placeholder="janedoe@email.com">
+				<br>
+				<br>
+				<label for="emailtwo">Confirm Email: </label>
+				<input type="text" id="emailtwo" name="emailtwo" placeholder="janedoe@email.com">
+			</form>
+		</div>
+		<div class="formtwo">
+			<form>
+				<textarea placeholder="Any questions or concerns..."></textarea>
+			</form>
+			<form>
+		</div>
+		<div class="submit">
+			<input type="submit" onclick="validateEmail()" value="Submit">
+			</form>
+		</div>
+		<script type="text/javascript"> 
+			function validateEmail() {
+				const emailone = document.getElementById("emailone");
+				const emailtwo = document.getElementById("emailtwo");
+
+				if (emailone.value == emailtwo.value) {
+					alert("Information confirmed!")
+				} else {
+					alert("Email inputs don't match.")
+				}
+			}
+		</script>
+		</section>
+		<aside>
+			<h2>Have any questions?</h2>
+			<hr>
+			<br>
+			<div class="contact">
+				<h4>Fill out this contact form with your information and any questions or concerns you may have! We will get back to you wihtin 24-48 hours.</h4>
+			</div>
+		</aside>
+	</body>
+</html>
